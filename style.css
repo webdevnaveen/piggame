@@ -1,0 +1,95 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2018/04/22/22/57/hacker-3342696_960_720.jpg);
+    background-repeat: no-repeat; 
+     background-size: 100% 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    height: 80vh;
+    width: 70%;
+    background: white;
+    margin-top: 10vh;
+    display: flex;
+}
+.player-0-panel,.player-1-panel{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.active{
+    background: #ececec;
+}
+.player-name{
+    font-size: 2em;
+    color: #575757;
+    font-family:sans-serif;
+    text-align: center;
+    padding: 10%;
+}
+.player-score{
+    font-size: 6em;
+    text-align: center;
+    color: rgb(255, 106, 128);
+    font-family: Impact,  'Arial Narrow Bold', sans-serif;
+}
+.current-box{
+    position: absolute;
+    bottom: 10vh;
+    left: 40%;
+    background: lightpink;
+    color: #262626;
+    padding: 3% 5%;
+    text-align: center;
+    font-size: 1.5em;
+    border-radius: 5px;
+}
+.current-label{
+    margin-bottom: 1vh;
+}
+button{
+    padding: 5px 10px;
+    border: none;
+    background: transparent;
+    color: #525252;
+    cursor: pointer;
+    font-size: 1.2em;
+    transition: all;
+    transition-duration: 200ms;
+}
+button i{
+    color: lightpink;
+}
+button:hover{
+    word-spacing: 3px;
+}
+.roll-dice{
+    position: absolute;
+    bottom: 25vh;
+    left: 45.5%;
+}
+.hold{
+    position: absolute;
+    bottom: 20vh;
+    left: 46%;
+    padding: 5px 15px;
+}
+.new-game{
+    position: absolute;
+    top : 15vh;
+    left: 44.5%;
+}
+#dice{
+    position: absolute;
+    top: 45vh;
+    left: 46.5%;
+    display: none;
+}
+.winner{
+    color: tomato;
+    background: #caf0fd;
+}
